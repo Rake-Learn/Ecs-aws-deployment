@@ -25,9 +25,9 @@ data "aws_ssm_parameter" "ecr_image_uri" {
 }
 
 # Optional Lambda Invoke ECS Role ARN
-data "aws_ssm_parameter" "lambda_invoke_ecs_role_arn" {
-  name = "/my-vpc/lambda_invoke_ecs_role_arn"
-}
+# data "aws_ssm_parameter" "lambda_invoke_ecs_role_arn" {
+#   name = "/my-vpc/lambda_invoke_ecs_role_arn"
+# }
 
 # ECS Cluster
 # tfsec:ignore:aws-ecs-enable-container-insight
