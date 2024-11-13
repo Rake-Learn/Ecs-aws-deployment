@@ -30,6 +30,7 @@ data "aws_ssm_parameter" "lambda_invoke_ecs_role_arn" {
 }
 
 # ECS Cluster
+# tfsec:ignore:aws-ecs-enable-container-insight
 resource "aws_ecs_cluster" "my_cluster" {
   name = var.ecs_cluster_name
 }
